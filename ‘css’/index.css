@@ -1,0 +1,32 @@
+body {
+  display: grid;
+  gap: 1em;
+}
+
+.header {
+  background-color: #f5f5f7;
+}
+
+.logo {
+  background-image: url(../‘images’/RainyDays_Logo_sm.png);
+  background-repeat: no-repeat;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.item {
+  padding: 10px;
+  margin: 20px;
+}
+
+.icons {
+  padding: 10px;
+  margin: 20px;
+}
+
+i {
+  max-width: 60px;
+  position: sticky;
+}
