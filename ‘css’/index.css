@@ -1,32 +1,98 @@
+/* Universal Styles*/
+
 body {
   display: grid;
   gap: 1em;
-}
-
-.header {
+  min-height: 100vh;
   background-color: #f5f5f7;
 }
-
-.logo {
-  background-image: url(../‘images’/RainyDays_Logo_sm.png);
-  background-repeat: no-repeat;
+a {
+  text-decoration: none;
+  color: #f5f5f7;
 }
-.container {
+header {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  min-height: 150px;
+  background-color: #f5f5f7;
+  justify-content: space-around;
 }
-.item {
-  padding: 10px;
-  margin: 20px;
+.logo {
+  min-width: 70%;
 }
 
 .icons {
-  padding: 10px;
-  margin: 20px;
+  margin-top: 20px;
+  padding: 5px;
+}
+.container {
+  margin: 2em;
 }
 
-i {
-  max-width: 60px;
-  position: sticky;
+.sales_text {
+  max-width: 75%;
+}
+
+footer {
+  background-color: #0a3641;
+  display: flex;
+  min-height: 120px;
+  justify-content: space-around;
+}
+.cta {
+  background-color: #0a3641;
+  padding: 2%;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  left: 70%;
+}
+
+/*Mobile styles*/
+
+.main_image {
+  background-image: url(../‘images’/main_image_sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: top;
+  min-height: 20vh;
+  position: relative;
+}
+.back_frontpage1 {
+  background-image: url(../‘images’/frontpage_1_sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 20vh;
+  position: relative;
+}
+
+.back_frontpage2 {
+  background-image: url(../‘images’/frontpage_community_sm.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  min-height: 20vh;
+  position: relative;
+}
+/*tablet styles*/
+
+@media (min-width: 600px) {
+  body {
+    background-color: blue;
+  }
+  .main_image {
+    background-image: url(../‘images’/main_image.png);
+    min-height: 30vh;
+  }
+  .back_frontpage1 {
+    background-image: url(../‘images’/frontpage_1.png);
+    min-height: 30vh;
+    background-position: center;
+  }
+  .back_frontpage2 {
+    background-image: url(../‘images’/frontpage_community.png);
+    min-height: 30vh;
+  }
 }
