@@ -6,6 +6,13 @@ body {
   min-height: 100vh;
   background-color: #f5f5f7;
   overflow-x: hidden;
+  font-family: Tahoma, Verdana, Geneva, sans-serif;
+}
+
+h1,
+h2,
+.a {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 a {
   text-decoration: none;
