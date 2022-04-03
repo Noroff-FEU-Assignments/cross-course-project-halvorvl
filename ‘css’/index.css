@@ -17,6 +17,9 @@ header {
   background-color: #f5f5f7;
   justify-content: space-between;
 }
+nav a {
+  color: #0a3641;
+}
 
 .search {
   display: none;
