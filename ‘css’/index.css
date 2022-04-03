@@ -154,11 +154,11 @@ li a {
 
   .main_image {
     background-image: url(../‘images’/main_image.png);
-    min-height: 30vh;
+    min-height: 40vh;
   }
   .back_frontpage1 {
     background-image: url(../‘images’/frontpage_1.png);
-    min-height: 30vh;
+    min-height: 40vh;
     min-width: 60%;
   }
   .back_frontpage2 {
@@ -205,7 +205,7 @@ li a {
     text-decoration: none;
     position: relative;
     top: 40%;
-    right: 40%;
+    right: 90%;
   }
   .icon {
     position: relative;
@@ -224,8 +224,6 @@ li a {
     padding: 10px;
     text-decoration: none;
     display: inline;
-    position: relative;
-    right: 200px;
   }
   li {
     display: inline;
