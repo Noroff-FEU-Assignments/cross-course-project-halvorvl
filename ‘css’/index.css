@@ -5,6 +5,7 @@ body {
   gap: 0.2em;
   min-height: 100vh;
   background-color: #f5f5f7;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
@@ -38,7 +39,12 @@ header {
 .desktop_heading {
   display: none;
 }
+
 .desktop_jackets {
+  display: none;
+}
+
+.main_cta_desktop {
   display: none;
 }
 .container,
@@ -68,7 +74,7 @@ li a {
 
 .social_media {
   position: relative;
-  left: 60%;
+  left: 10%;
 }
 .social_text {
   color: #f5f5f7;
@@ -146,11 +152,6 @@ li a {
     min-width: 100%;
   }
 
-  .icon {
-    top: 30px;
-    left: 50px;
-  }
-
   .main_image {
     background-image: url(../‘images’/main_image.png);
     min-height: 30vh;
@@ -171,13 +172,13 @@ li a {
 
 @media only screen and (min-width: 900px) {
   .desktop_only {
-    display: contents;
+    display: inline;
   }
   .container1 {
     display: none;
   }
   h1 {
-    max-width: 250px;
+    max-width: 300px;
     background-color: #f5f5f749;
     padding: 5% 2% 7% 2%;
     margin-left: 5%;
@@ -199,10 +200,6 @@ li a {
     margin-right: 10px;
   }
 
-  .mobile_menu {
-    display: none;
-  }
-
   .desktop_menu {
     display: inline;
     text-decoration: none;
@@ -212,25 +209,36 @@ li a {
   }
   .icon {
     position: relative;
-    left: 90%;
+    left: 50%;
   }
 
   .search {
     display: inline;
     position: relative;
-    left: 85%;
+    left: 40%;
+    top: 15%;
   }
 
   nav a {
     color: #0a3641;
     padding: 10px;
     text-decoration: none;
-  }
-  li,
-  li a {
     display: inline;
-    font-size: 1.3em;
-    margin: 20px;
+    position: relative;
+    right: 200px;
+  }
+  li {
+    display: inline;
+    font-size: 1.5em;
+  }
+  .main_cta_desktop {
+    display: inline;
+    background-color: #0a3641;
+    padding: 5%;
+    border-radius: 10px;
+    position: relative;
+    top: 20px;
+    left: 100px;
   }
 
   .desktop_heading {
