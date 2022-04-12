@@ -1,0 +1,102 @@
+nav, header, main, footer, section {
+    border: 2px solid darkblue;
+    min-height: 100px;
+    
+  
+}
+ 
+nav {grid-area: nav;}
+header {grid-area: header;}
+main {grid-area: main;}
+h1 {grid-area: H1;}
+.best_selling_jackets :nth-child(1) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(2) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(3) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(4) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(5) {grid-area: best_selling_jackets;}
+.main_section1 {grid-area: main_section1 ;}
+.main_section2 {grid-area: main_section2 ;}
+.main_section3 {grid-area: main_section3 ;}
+.main_section4 {grid-area: main_section4 ;}
+footer {grid-area: footer;}
+
+body {
+    display: grid;
+    grid-gap: 5px;
+    background-color:#f5f5f7 ;
+    grid-template-areas: 
+    'nav'
+    'header'
+    'main'
+    'footer'
+}
+
+nav {
+    display: grid;
+    grid-template-areas: 
+    'logo_section desktop_menu icon_menu'
+}
+
+
+.logo{
+    max-width: 90%;
+}
+
+ul{
+    position: absolute;
+    left: 220px;
+    top: 90px;
+}
+
+li {
+    display: inline;
+}
+nav a{ 
+    text-decoration: none;
+    font-size: 1.5em;
+   
+}
+.icon{
+    position: sticky;
+    top: 20px;
+    float: right;
+    padding: 5px;
+    
+}
+
+.search{
+    position: absolute;
+    top: 120px;
+    right: 20px;
+}
+main{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas: 
+    'H1 H1 H1 H1 H1'
+    'best_selling_jackets best_selling_jackets best_selling_jackets best_selling_jackets best_selling_jackets'
+    'main_section1 main_section1 main_section1 main_section2 main_section2'
+    'main_section3 main_section3 main_section4 main_section4 main_section4'
+
+}
+
+header{
+    background-image: url(../‘images’/main_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+}
+
+.main_image_text{
+    font-size: 2em;
+    background-color: #f5f5f77c;
+    max-width: 300px;
+    max-height: 80%;
+}
+.main_cta {
+    background-color: #0a3641;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 0.6em;
+    color: #f5f5f7;
+}
