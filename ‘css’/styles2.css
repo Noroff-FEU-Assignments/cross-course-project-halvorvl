@@ -40,6 +40,10 @@ h2{
     text-align: center;
 }
 
+p{
+    padding: 3px;
+    margin: 5px;
+}
 a{text-decoration: none;
     font-size: 1.2em;
     color: #0a3641;
@@ -617,4 +621,65 @@ footer a{
 
   .background_confirmation{
     background-image: url(../‘images’/sucsess.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 40vh;
+    }
+
+
+    /*spesific jackets styles*/
+
+    .image1 {grid-area: image1 ;}
+    .image2 {grid-area: image2 ;}
+    .cart  {grid-area: cart ;}
+    .image3 {grid-area: image3 ;}
+    .image4 {grid-area: image4 ;}
+    .description  {grid-area: description ;}
+
+    
+    
+    
+
+    .specific_jackets{
+        display: grid;
+        grid-template-areas: 
+        'H1     H1     H1'
+        'image1 image2 cart'
+        'image3 image4 description'
+         ;
+         gap: 10px;
+    }
+
+    .image1,
+    .image2,
+    .car,
+    .image3,
+    .image4,
+    .description{
+        width: 100%;
+       
+    }
+
+    .cart{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sizes{
+        display: flex;  
+        gap: 5px;
+        
+    }
+
+    .size_box{
+        border: solid 1px;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .cta_jacket_spesific{
+        max-width: 35%;
+        margin-top: 5px;
+        padding: 10px;
     }
