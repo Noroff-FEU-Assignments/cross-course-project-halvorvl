@@ -644,33 +644,66 @@ footer a{
     .specific_jackets{
         display: grid;
         grid-template-areas: 
-        'H1     H1     H1'
+        'H1     H1     H1 '
         'image1 image2 cart'
         'image3 image4 description'
          ;
          gap: 10px;
+         justify-content: center;
+ 
     }
 
     .image1,
     .image2,
-    .car,
+    .cart,
     .image3,
     .image4,
     .description{
-        width: 100%;
-       
+        width: 100%;  
+    }
+    .image1,
+    .image2,
+    .image3,
+    .image4{
+        min-width: 70%;
     }
 
     .cart{
         display: flex;
         flex-direction: column;
+        justify-content: space-around;
+  
+        
     }
 
     .sizes{
         display: flex;  
-        gap: 5px;
+        gap: 15px;
+        border-bottom: solid 1px;
+        border-top: solid 1px;
+        padding-bottom: 5px;
+        padding-left: 15px;
         
     }
+
+    .stars{
+        display: flex;
+        gap: 20px;
+        border-bottom: solid 1px;
+        border-top: solid 1px;
+        padding: 5px 0 5px 15px;
+       }
+
+    .colors{
+        display: flex;
+        gap: 20px;
+        border-bottom: solid 1px;
+        border-top: solid 1px;
+        padding: 5px 0 5px 15px;
+        
+    }
+
+    
 
     .size_box{
         border: solid 1px;
@@ -682,4 +715,145 @@ footer a{
         max-width: 35%;
         margin-top: 5px;
         padding: 10px;
+    }
+
+    .description{
+        display: flex;
+        flex-direction: column;
+       
+       
+    }
+
+    .scales{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-right: 20px;
+    }
+
+    
+    @media only screen and (min-width: 600px) and  (max-width: 899px){
+
+        .specific_jackets{
+           
+            grid-template-areas: 
+            'H1      H1 '
+            'image1  cart'
+            'image2 description'
+            'image3 description'
+            'image4 description'
+             ;
+             gap: 10px;
+             
+     
+        }    
+    }
+    
+     
+    @media only screen and (min-width: 100px) and  (max-width: 599px){
+
+        .specific_jackets{
+           
+            grid-template-areas: 
+            'H1'
+            'cart'
+            'description'
+            'image1'
+            'image2'
+            'image3'
+            'image4'
+             ;
+             gap: 10px;
+             
+     
+        }    
+    }
+    
+    /*checkout styles*/
+
+    .payment_info {grid-area: payment_info ;}
+    .cart_info {grid-area: cart_info ;}
+    .cards :nth-child(1) {grid-area: cards;}
+    .cards :nth-child(2) {grid-area: cards;}
+    .cards :nth-child(3) {grid-area: cards;}
+
+    .checkout{
+        display: grid;
+        grid-template-areas: 
+        'payment_info payment_info cart_info';
+        gap: 20px;
+    
+    }
+
+    .payment_info{
+        background-color: #ffffff;
+        border: solid 2px;
+        padding: 20px;
+    }
+
+
+    .cards_container{
+        display: grid;
+        justify-content: center;
+        grid-template-areas: 
+        'cards cards cards';
+        gap: 10px;
+        max-width: 100%;
+        margin: 0 10px 0 10px;
+    }
+    .cards{
+        border-radius: 8%;
+        border: solid 1px;
+        max-width: 90%;
+    }
+
+    
+    .cart_info{
+        display: grid;
+        background-color: #ffffff;
+        border: solid 2px;
+        max-width: 100%;
+        justify-content: center;
+
+        
+
+    }
+
+    .cart_image{
+        max-width: 100%;
+        
+        
+    }
+
+    .name_raincoat{
+        display: flex;
+        font-size: 1.5em;
+        justify-content: center;
+        
+    }
+
+    .counter{
+        display: flex;
+        max-height: 50px;
+        justify-content: center;
+        font-size: 2em;
+    }
+
+    .counter_box{
+        border: solid 1px;
+        position: relative;
+        padding: 0 10px 0 10px;
+        top: 5px;
+    }
+
+    .price{
+        font-size: 1.2em;
+    }
+    
+    @media only screen and (min-width: 100px) and  (max-width: 599px){
+        .checkout{
+            grid-template-areas:
+            'cart_info' 
+            'payment_info' ;
+        }
     }
