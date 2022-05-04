@@ -107,6 +107,11 @@ li {
     right: 20px;
 }
 
+#hamburger_menu,
+.fa-bars{
+    display: none;
+}
+
 
 header{
     background-image: url(../‘images’/main_image.png);
@@ -287,12 +292,39 @@ footer a{
         display: none;
     }
 
+    #hamburger_menu{
+        display: none;
+    }
+    
+    
+    
+    #hamburger_menu:checked ~ .main_menu {
+        display: block;
+        background-color: #f4f6fa;
+        position: absolute;
+        left: 50%;
+        right: 0.1%;
+        min-height: 142px;   
+    }
+  
+    li{
+        display: block;
+    }
+        
+    .fa-bars{
+        display: block;
+        font-size: 1.5em;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+    }
+
     header{
         min-height: 15vh;
     }
 
     .main_image_text{
-        max-width: 30%;
+        max-width: 35%;
         max-height:90% ;
         left: 10px;
         bottom: 20px;
