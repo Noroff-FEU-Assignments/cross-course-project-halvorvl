@@ -107,11 +107,31 @@ li {
     right: 20px;
 }
 
-#hamburger_menu,
-.fa-bars{
+#hamburger_menu
+{
     display: none;
 }
 
+.fa-bars{
+    visibility: hidden;
+}
+
+
+  
+  .green {
+    color: #2d7f28;
+  }
+
+  .military_green {
+    color: #74713c;
+  }
+
+  .pink {
+    color: #a25c57;
+  }
+  .blue {
+    color: #0a3641;
+  }
 
 header{
     background-image: url(../‘images’/main_image.png);
@@ -163,7 +183,7 @@ header{
 
 
 .best_selling_jackets{
-    max-width: 200px;
+    max-width: 100%;
     margin: 5%;
     border: solid 2px;
 }
@@ -171,6 +191,19 @@ header{
 
 .best_selling_jackets_images{
     max-width: 100%;
+
+}
+.color_swatches,
+.price{
+    padding-left: 10px;
+}
+
+.best_selling_cart{
+    position: relative;
+    left: 70%;
+    bottom: 35px;
+    font-size: 1.8em;
+    padding: 5px;
 
 }
 
@@ -248,6 +281,12 @@ footer a{
     .hide_tablet{
         display: none;
     }
+
+    .best_selling_cart{
+        position: inherit;
+        padding: 10px;
+    }
+
     
     .main_container1{
         
@@ -312,7 +351,7 @@ footer a{
     }
         
     .fa-bars{
-        display: block;
+        visibility: inherit;
         font-size: 1.5em;
         position: absolute;
         right: 20px;
@@ -321,6 +360,11 @@ footer a{
 
     header{
         min-height: 15vh;
+    }
+
+    .best_selling_cart{
+        position: inherit;
+        padding: 10px;
     }
 
     .main_image_text{
@@ -553,7 +597,7 @@ footer a{
 }
 
 .jackets{
-    max-width: 200px;
+    max-width: 100%;
     margin: 5%;
     border: solid 2px;
 }
