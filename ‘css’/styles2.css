@@ -693,7 +693,7 @@ footer a{
     }
   }
 
-  /*confirmation styles*/
+  /*confirmation + contact confirmation styles*/
 
   .background_confirmation{
     background-image: url(../‘images’/sucsess.png) ;
@@ -701,6 +701,33 @@ footer a{
     background-size: cover;
     background-position: center;
     min-height: 40vh;
+    }
+
+    .confirmation_text{
+        font-size: 1.5em;
+        position: relative;
+        left: 5%;
+        right: 1%;
+        max-width: 400px;
+    }
+
+    .heading_sucsess{
+        color: #2D7F28;
+        font-size: 3em;
+        max-width: 400px;
+        
+    }
+
+    .continue_shopping{
+        background-color: #2d7f28;
+        margin-top: 10px;
+    }
+
+    @media only screen and (min-width: 100px) and  (max-width: 599px){
+        .heading_sucsess{
+            font-size: 2em;
+        }
+
     }
 
 
