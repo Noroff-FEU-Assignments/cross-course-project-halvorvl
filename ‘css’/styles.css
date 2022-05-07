@@ -1,13 +1,13 @@
  /*universal styles start at line 12 
-   mobile universal styles start at line 331
-   hompage styles start at line 204
-   mobile hompage styles start at line 388
-   about us styles start at line 443
-   jackets styles start at line 592
-   contact styles start at line 644
-   confimation styles start at line 714
-   jacket spesific styles start at line 754
-   checkout styles start at line 895
+   mobile universal styles start at line 329
+   hompage styles start at line 202
+   mobile hompage styles start at line 386
+   about us styles start at line 441
+   jackets styles start at line 589
+   contact styles start at line 642
+   confimation styles start at line 712
+   jacket spesific styles start at line 752
+   checkout styles start at line 893
    */
 
 
@@ -33,26 +33,22 @@ body {
 }
 
 h1,
-h2,
-.a {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-
-h1,
 h2{
-    text-align: center;
-    color: #2d7f28;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  color: #2d7f28;
 }
+
 
 p{
     padding: 3px;
     margin: 5px;
 }
-a{text-decoration: none;
+a{
+    text-decoration: none;
     font-size: 1.2em;
     color: #0a3641;
-
+    font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 
@@ -735,7 +731,7 @@ header{
         color: #2D7F28;
         font-size: 3em;
         max-width: 300px;
-        
+        padding-left: 10%;
         
     }
 
