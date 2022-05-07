@@ -1,18 +1,22 @@
- 
+ /*universal styles start at line 12 
+   mobile universal styles start at line 331
+   hompage styles start at line 204
+   mobile hompage styles start at line 388
+   about us styles start at line 443
+   jackets styles start at line 592
+   contact styles start at line 644
+   confimation styles start at line 714
+   jacket spesific styles start at line 754
+   checkout styles start at line 895
+   */
+
+
+/*universal styles*/
+
 nav {grid-area: nav;}
 header {grid-area: header;}
 main {grid-area: main;}
 h1 {grid-area: H1;}
-.best_selling_jackets :nth-child(1) {grid-area: best_selling_jackets;}
-.best_selling_jackets :nth-child(2) {grid-area: best_selling_jackets;}
-.best_selling_jackets :nth-child(3) {grid-area: best_selling_jackets;}
-.best_selling_jackets :nth-child(4) {grid-area: best_selling_jackets;}
-.best_selling_jackets :nth-child(5) {grid-area: best_selling_jackets;}
-.container_jackets {grid-area: container_jackets;}
-.main_section1 {grid-area: main_section1 ;}
-.main_section2 {grid-area: main_section2 ;}
-.main_section3 {grid-area: main_section3 ;}
-.main_section4 {grid-area: main_section4 ;}
 footer {grid-area: footer;}
 
 body {
@@ -76,11 +80,13 @@ button a{
     position: absolute;
     left: 220px;
     top: 90px;
+    
 }
 
 li {
     display: inline;
     text-decoration: none;
+    padding: 10px;
 }
 
 
@@ -116,7 +122,10 @@ li {
 .fa-bars{
     visibility: hidden;
 }
-
+.color_swatches,
+.price{
+    padding-left: 10px;
+}
 
   
   .green {
@@ -134,57 +143,7 @@ li {
     color: #0a3641;
   }
 
-header{
-    background-image: url(../‘images’/main_image.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 40vh;
-    margin: 0% -1% 0% -1%;
-    
-}
-
-
-.frontpage1{
-    max-width: 100%;
-    min-height: 100%;
-}
-
-.main_image_text{
-    font-size: 1.5em;
-    background-color: #f5f5f7ac;
-    max-width: 300px;
-    padding: 10px;
-    position: absolute;
-    left: 30px;
-    margin-top: 30px;
-}
-.main_cta {
-    background-color: #0a3641;
-    border-radius: 10px;
-    padding: 15px;
-    font-size: 0.8em;
-    color: #f5f5f7;
-    position: relative;
-    left: 150px;
-    bottom: 10px;
-    margin: 10px;
-}
-
-
-
-.container_jackets{
-    display: grid;
-    justify-content: center;
-    border: solid #0a3641 2px;
-    margin: 10px 10px 30px 10px;
-    grid-template-areas: 
-    'best_selling_jackets best_selling_jackets best_selling_jackets best_selling_jackets best_selling_jackets'
-    
-}
-
-
-
-.best_selling_jackets{
+  .best_selling_jackets{
     max-width: 100%;
     margin: 5%;
     border: solid 2px;
@@ -195,10 +154,7 @@ header{
     max-width: 100%;
 
 }
-.color_swatches,
-.price{
-    padding-left: 10px;
-}
+
 
 .best_selling_cart{
     position: relative;
@@ -207,29 +163,6 @@ header{
     font-size: 1.8em;
     padding: 5px;
 
-}
-
-.main_container1{
-    display: grid;
-    grid-gap: 5px;  
-    margin: 10px;
-    grid-template-areas:' main_section1 main_section1 main_section2'
-    
-}
-
-
-
-.main_container2{
-    display: grid;
-    grid-gap: 5px;  
-    margin: 10px;
-    grid-template-areas:' main_section3 main_section4 main_section4 '
-    
-}
-
-.cta_readmore1{
-   
-    left: 60%;
 }
 
 footer{
@@ -268,6 +201,86 @@ footer a{
     font-size: 40px;
     color: #1da1f2;
   }
+
+
+  /*hompage styles*/
+
+.best_selling_jackets :nth-child(1) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(2) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(3) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(4) {grid-area: best_selling_jackets;}
+.best_selling_jackets :nth-child(5) {grid-area: best_selling_jackets;}
+.container_jackets {grid-area: container_jackets;}
+.main_section1 {grid-area: main_section1 ;}
+.main_section2 {grid-area: main_section2 ;}
+.main_section3 {grid-area: main_section3 ;}
+.main_section4 {grid-area: main_section4 ;}
+
+header{
+    background-image: url(../‘images’/main_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 40vh;
+    margin: 0 -1% 0 -1%;
+    
+}
+
+
+.frontpage1{
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.main_image_text{
+    font-size: 1.5em;
+    background-color: #f5f5f7ac;
+    max-width: 300px;
+    padding: 10px;
+    position: absolute;
+    left: 30px;
+    margin-top: 30px;
+}
+.main_cta {
+    left: 150px;
+    bottom: 10px;
+    margin: 10px;
+}
+
+
+
+.container_jackets{
+    display: grid;
+    justify-content: center;
+    border: solid #0a3641 2px;
+    margin: 10px 10px 30px 10px;
+    grid-template-areas: 
+    'best_selling_jackets best_selling_jackets best_selling_jackets best_selling_jackets best_selling_jackets'
+    
+}
+
+.main_container1{
+    display: grid;
+    grid-gap: 5px;  
+    margin: 10px;
+    grid-template-areas:' main_section1 main_section1 main_section2'
+    
+}
+
+
+
+.main_container2{
+    display: grid;
+    grid-gap: 5px;  
+    margin: 10px;
+    grid-template-areas:' main_section3 main_section4 main_section4 '
+    
+}
+
+.cta_readmore1{
+   
+    left: 60%;
+}
+
 
 
 
@@ -316,7 +329,7 @@ footer a{
 
 }
 
-/*mobile styles*/
+/*mobile universal styles*/
 
 @media only screen and (min-width: 100px) and (max-width: 599px){
     h1{
@@ -351,6 +364,9 @@ footer a{
     li{
         display: block;
     }
+    .search{
+        display: none;
+    }
         
     .fa-bars{
         visibility: inherit;
@@ -368,6 +384,10 @@ footer a{
         position: inherit;
         padding: 10px;
     }
+}
+
+    /*mobile homepage styles*/
+    @media only screen and (min-width: 100px) and (max-width: 599px){
 
     .main_image_text{
         max-width: 35%;
@@ -384,9 +404,7 @@ footer a{
         padding: 7px;
 
     }
-    .search{
-        display: none;
-    }
+    
 
     
 
@@ -572,7 +590,7 @@ footer a{
 }
 }
 
-/*jackets styles*/
+/*jackets (men,women and all) styles*/
 
 .jackets :nth-child(1) {grid-area: jackets;}
 .jackets :nth-child(2) {grid-area: jackets;}
@@ -599,7 +617,6 @@ footer a{
 }
 
 .jackets{
-    max-width: 100%;
     margin: 5%;
     border: solid 2px;
 }
