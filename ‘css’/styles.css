@@ -1,13 +1,13 @@
  /*universal styles start at line 12 
-   mobile universal styles start at line 329
+   mobile universal styles start at line 328
    hompage styles start at line 202
-   mobile hompage styles start at line 386
-   about us styles start at line 441
+   mobile hompage styles start at line 385
+   about us styles start at line 440
    jackets styles start at line 589
-   contact styles start at line 642
-   confimation styles start at line 712
-   jacket spesific styles start at line 752
-   checkout styles start at line 893
+   contact styles start at line 641
+   confimation styles start at line 711
+   jacket spesific styles start at line 751
+   checkout styles start at line 892
    */
 
 
@@ -213,7 +213,7 @@ footer a{
 .main_section4 {grid-area: main_section4 ;}
 
 header{
-    background-image: url(../‘images’/main_image.png);
+    background-image: url(../‘images’/main_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 40vh;
@@ -452,7 +452,7 @@ header{
 
 
 .about_us_header{
-    background-image: url(../‘images’/aboutus_banner.png) ;
+    background-image: url(../‘images’/aboutus_banner.jpg) ;
 
 }
 
@@ -598,7 +598,7 @@ header{
 .jackets :nth-child(8) {grid-area: jackets;}
 
 .jackets_header{
-    background-image: url(../‘images’/jackets_header.png) ;
+    background-image: url(../‘images’/jackets_header.jpg) ;
 
 }
 
@@ -711,7 +711,7 @@ header{
   /*confirmation + contact confirmation styles*/
 
   .background_confirmation{
-    background-image: url(../‘images’/sucsess.png) ;
+    background-image: url(../‘images’/sucsess.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
