@@ -2,189 +2,263 @@
 <html>
   <head>
     <title>RainyDays Homepage</title>
-    <meta name="viewport" content="device-width, initial-scale=1">
-    <meta charset="UTF_8"> 
-    <meta name="description" content="Rainydays homepage, the perfect place to get you next jacket" >
-    <link rel="stylesheet" href="../‘css’/styles.css">
-    
-    <script src="https://kit.fontawesome.com/226b8a9eff.js" crossorigin="anonymous">
-    </script>
+    <meta name="viewport" content="device-width, initial-scale=1" />
+    <meta charset="UTF_8" />
+    <meta
+      name="description"
+      content="Rainydays homepage, the perfect place to get you next jacket"
+    />
+    <link rel="stylesheet" href="../‘css’/styles.css" />
 
-   <!-- Hotjar Tracking Code for Cross course project -->
-<script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3346553,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+    <script
+      src="https://kit.fontawesome.com/226b8a9eff.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Hotjar Tracking Code for Cross course project -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3346553, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
         a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
-
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>
   </head>
   <body>
-     <nav>
+    <nav>
+      <a href="index.html"
+        ><img src="../‘images’/RainyDays_Logo_sm.png" alt="Logo" class="logo"
+      /></a>
 
-             <a href="index.html"><img src="../‘images’/RainyDays_Logo_sm.png" alt="Logo" class="logo"></a>
+      <label for="hamburger_menu"><i class="fa-solid fa-bars"></i></label>
+      <input type="checkbox" id="hamburger_menu" />
 
-             <label for="hamburger_menu"><i class="fa-solid fa-bars"></i></label>
-              <input type="checkbox" id="hamburger_menu">
-         
-            <ul class="main_menu">
-                <li><a href="jackets_men.html"> Men`s</a></li>
-                <li><a href="jackets_women.html"> Women`s</a></li>
-                <li><a href="about.html"> About us </a></li>
-              </ul>
+      <ul class="main_menu">
+        <li><a href="jackets_men.html"> Men`s</a></li>
+        <li><a href="jackets_women.html"> Women`s</a></li>
+        <li><a href="about.html"> About us </a></li>
+      </ul>
 
-              
-         
-         
-                <a href="index.html" class="icon1"><i class="fa-solid fa-house fa-fw " alt="Home"></i></a>
-                <a href="contact.html" class="icon2"><i class="fa-solid fa-message fa-fw " alt="Contact"></i></a>
-                <a href="checkout.html" class="icon3"><i class="fa-solid fa-cart-shopping fa-fw " alt="Shopping Cart"></i></a>
-            <div class="search">
-                <input type="text" placeholder="Search..">
-            </div>
-         
-        
+      <a href="index.html" class="icon1"
+        ><i class="fa-solid fa-house fa-fw" alt="Home"></i
+      ></a>
+      <a href="contact.html" class="icon2"
+        ><i class="fa-solid fa-message fa-fw" alt="Contact"></i
+      ></a>
+      <div class="total-price"></div>
+      <a href="checkout.html" class="icon3">
+        <i class="fa-solid fa-cart-shopping fa-fw" alt="Shopping Cart"> </i
+      ></a>
 
-     </nav> 
-     <header>
-         <section class="main_image_text">
-             <p>Get sustainable,comfortable and durable rainwear for your next adventure</p>
-             <a href="all_jackets.html"><button class="main_cta">Shop Now </button></a>
+      <div class="search">
+        <input type="text" placeholder="Search.." />
+      </div>
+    </nav>
 
-         </section>
-
-     </header>
-     <main>
-         
-         <h1>Best selling Jackets</h1>
-         <section class="container_jackets">
-         <section class="best_selling_jackets">
-           <a href="jacket_forrest.html">
-            <img src="../‘images’/redandblue_jacket.jpg" alt="Red and Blue mens Tulsa Jacket" class="best_selling_jackets_images">
-          </a>
-            <p>Mens Tulsa Raincoat</p> 
-            <div class="color_swatches">
-            <i class="fa-solid fa-circle green"></i>
-            <i class="fa-solid fa-circle military_green"></i>
-            <i class="fa-solid fa-circle pink"></i>
-            <i class="fa-solid fa-circle blue"></i>
-          </div>
-          <div class="price">Price $99</div>
-
-            <div><a href="checkout.html"><i class="fa-solid fa-cart-shopping best_selling_cart"></i></div></a>
-         </section>
-
-         <section class="best_selling_jackets">
-          <a href="jacket_tulsa.html">
-            <img src="../‘images’/women_tulsa.jpg" alt="Womens tulsa raincoat, orange" class="best_selling_jackets_images">
-          </a>
-            <p>Womens Tulsa Raincoat</p> 
-            <div class="color_swatches">
-            <i class="fa-solid fa-circle green"></i>
-            <i class="fa-solid fa-circle military_green"></i>
-            <i class="fa-solid fa-circle pink"></i>
-            <i class="fa-solid fa-circle blue"></i>
-          </div>
-          <div class="price">Price $99</div>
-
-          <div><a href="checkout.html"><i class="fa-solid fa-cart-shopping best_selling_cart"></i></div></a>
-         </section>
-
-         <section class="best_selling_jackets hide_mobile">
-          <a href="jacket_tulsa.html">
-            <img src="../‘images’/monta_raincoat.jpg" alt="Womens monta raincoat, orange " class="best_selling_jackets_images">
-          </a>
-            <p>Womens Monta Raincoat</p> 
-            <div class="color_swatches">
-            <i class="fa-solid fa-circle green"></i>
-            <i class="fa-solid fa-circle military_green"></i>
-            <i class="fa-solid fa-circle pink"></i>
-            <i class="fa-solid fa-circle blue"></i>
-          </div>
-          <div class="price">Price $99</div>
-
-          <div><a href="checkout.html"><i class="fa-solid fa-cart-shopping best_selling_cart"></i></div></a>
-         </section>
-
-         <section class="best_selling_jackets hide_tablet">
+    <div class="shoppingCartHtml hideIndexHtml"></div>
+    <header>
+      <section class="main_image_text">
+        <p>
+          Get sustainable,comfortable and durable rainwear for your next
+          adventure
+        </p>
+        <a href="all_jackets.html"
+          ><button class="main_cta">Shop Now</button></a
+        >
+      </section>
+    </header>
+    <main>
+      <h1>Best selling Jackets</h1>
+      <section class="container_jackets">
+        <section class="best_selling_jackets products">
           <a href="jacket_forrest.html">
-            <img src="../‘images’/men_newyork_raincoat.jpg" alt="Yellow, NewYork raincoat for men" class="best_selling_jackets_images">
+            <img
+              src="../‘images’/redandblue_jacket.jpg"
+              alt="Red and Blue mens Tulsa Jacket"
+              class="best_selling_jackets_images procuct-image"
+            />
           </a>
-            <p>Mens NewYork Raincoat</p> 
-            <div class="color_swatches">
+          <p class="product-name">Mens Tulsa Raincoat</p>
+          <div class="color_swatches">
             <i class="fa-solid fa-circle green"></i>
             <i class="fa-solid fa-circle military_green"></i>
             <i class="fa-solid fa-circle pink"></i>
             <i class="fa-solid fa-circle blue"></i>
           </div>
-          <div class="price">Price $99</div>
+          <div class="price">
+            Price $
+            <div class="price-value">99</div>
+          </div>
 
-          <div><a href="checkout.html"><i class="fa-solid fa-cart-shopping best_selling_cart"></i></div></a>
-         </section>
+          <i
+            class="fa-solid fa-cart-shopping best_selling_cart addToCart"
+            data-product-id="1"
+          ></i>
+        </section>
 
-         <section class="best_selling_jackets hide_tablet">
+        <section class="best_selling_jackets products">
           <a href="jacket_tulsa.html">
-            <img src="../‘images’/womens_jersey_raincoat.jpg" alt="Yellow, womens Jersey raincoat" class="best_selling_jackets_images">
+            <img
+              src="../‘images’/women_tulsa.jpg"
+              alt="Womens tulsa raincoat, orange"
+              class="best_selling_jackets_images procuct-image"
+            />
           </a>
-            <p>Womens Jersey Raincoat</p> 
-            <div class="color_swatches">
+          <p class="product-name">Womens Tulsa Raincoat</p>
+          <div class="color_swatches">
             <i class="fa-solid fa-circle green"></i>
             <i class="fa-solid fa-circle military_green"></i>
             <i class="fa-solid fa-circle pink"></i>
             <i class="fa-solid fa-circle blue"></i>
           </div>
-          <div class="price">Price $99</div>
+          <div class="price">
+            Price $
+            <div class="price-value">99</div>
+          </div>
 
-          <div><a href="checkout.html"><i class="fa-solid fa-cart-shopping best_selling_cart"></i></div></a>
-         </section>
+          <i
+            class="fa-solid fa-cart-shopping best_selling_cart addToCart"
+            data-product-id="2"
+          ></i>
         </section>
-        
-        <section class="main_container1">
-         <section class="main_section1">
-            <img src="../‘images’/frontpage_1.jpg" alt="Red and Blue mens Tulsa Jacket" class="frontpage1">
-         </section>
-         <section class="main_section2">
-            <h2>Pushing the comfortzone</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            vitae interdum purus. Sed et imperdiet nunc. Aliquam erat volutpat. 
-            Nulla ligula elit, tempor at varius quis, tristique at leo. Nulla sed 
-            dolor nec libero tempus ultricies. 
-            </p>
-           <button class="cta_readmore1"><a href="about.html" class="cta">Read More</a></button>
-         </section>
+
+        <section class="best_selling_jackets hide_mobile products">
+          <a href="jacket_tulsa.html">
+            <img
+              src="../‘images’/monta_raincoat.jpg"
+              alt="Womens monta raincoat, orange "
+              class="best_selling_jackets_images"
+            />
+          </a>
+          <p class="product-name">Womens Monta Raincoat</p>
+          <div class="color_swatches">
+            <i class="fa-solid fa-circle green"></i>
+            <i class="fa-solid fa-circle military_green"></i>
+            <i class="fa-solid fa-circle pink"></i>
+            <i class="fa-solid fa-circle blue"></i>
+          </div>
+          <div class="price">
+            Price $
+            <div class="price-value">99</div>
+          </div>
+
+          <i
+            class="fa-solid fa-cart-shopping best_selling_cart addToCart"
+            data-product-id="3"
+          ></i>
         </section>
-         <section class="main_container2">
-         <section class="main_section3">
-            <h2>Join our communtiy</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-            vitae interdum purus. Sed et imperdiet nunc. Aliquam erat volutpat. 
-            Nulla ligula elit, tempor at varius quis, tristique at leo. Nulla sed 
+
+        <section class="best_selling_jackets hide_tablet products">
+          <a href="jacket_forrest.html">
+            <img
+              src="../‘images’/men_newyork_raincoat.jpg"
+              alt="Yellow, NewYork raincoat for men"
+              class="best_selling_jackets_images"
+            />
+          </a>
+          <p class="product-name">Mens NewYork Raincoat</p>
+          <div class="color_swatches">
+            <i class="fa-solid fa-circle green"></i>
+            <i class="fa-solid fa-circle military_green"></i>
+            <i class="fa-solid fa-circle pink"></i>
+            <i class="fa-solid fa-circle blue"></i>
+          </div>
+          <div class="price">
+            Price $
+            <div class="price-value">99</div>
+          </div>
+          <i
+            class="fa-solid fa-cart-shopping best_selling_cart addToCart"
+            data-product-id="4"
+          ></i>
+        </section>
+
+        <section class="best_selling_jackets hide_tablet products">
+          <a href="jacket_tulsa.html">
+            <img
+              src="../‘images’/womens_jersey_raincoat.jpg"
+              alt="Yellow, womens Jersey raincoat"
+              class="best_selling_jackets_images"
+            />
+          </a>
+          <p class="product-name">Womens Jersey Raincoat</p>
+          <div class="color_swatches">
+            <i class="fa-solid fa-circle green"></i>
+            <i class="fa-solid fa-circle military_green"></i>
+            <i class="fa-solid fa-circle pink"></i>
+            <i class="fa-solid fa-circle blue"></i>
+          </div>
+          <div class="price">
+            Price $
+            <div class="price-value">99</div>
+          </div>
+
+          <i
+            class="fa-solid fa-cart-shopping best_selling_cart addToCart"
+            data-product-id="5"
+          ></i>
+        </section>
+      </section>
+
+      <section class="main_container1">
+        <section class="main_section1">
+          <img
+            src="../‘images’/frontpage_1.jpg"
+            alt="Red and Blue mens Tulsa Jacket"
+            class="frontpage1"
+          />
+        </section>
+        <section class="main_section2">
+          <h2>Pushing the comfortzone</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            interdum purus. Sed et imperdiet nunc. Aliquam erat volutpat. Nulla
+            ligula elit, tempor at varius quis, tristique at leo. Nulla sed
             dolor nec libero tempus ultricies.
-            </p>
-            <button class="cta_readmore1" ><a href="community.html" class="cta">Join Now</a></button>
-         </section>
-         <section class="main_section4">
-            <img src="../‘images’/frontpage_community.jpg" alt="Red and Blue mens Tulsa Jacket" class="frontpage1">
-         </section>
+          </p>
+          <button class="cta_readmore1">
+            <a href="about.html" class="cta">Read More</a>
+          </button>
         </section>
+      </section>
+      <section class="main_container2">
+        <section class="main_section3">
+          <h2>Join our communtiy</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae
+            interdum purus. Sed et imperdiet nunc. Aliquam erat volutpat. Nulla
+            ligula elit, tempor at varius quis, tristique at leo. Nulla sed
+            dolor nec libero tempus ultricies.
+          </p>
+          <button class="cta_readmore1">
+            <a href="community.html" class="cta">Join Now</a>
+          </button>
+        </section>
+        <section class="main_section4">
+          <img
+            src="../‘images’/frontpage_community.jpg"
+            alt="Red and Blue mens Tulsa Jacket"
+            class="frontpage1"
+          />
+        </section>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="footer_menu">
+        <ul>
+          <li><a href="about.html"> About Us</a></li>
+          <li><a href="contact.html"> Contact Us</a></li>
+        </ul>
+      </section>
 
-     </main>
-     <footer class="footer">
-    
-        <section class="footer_menu">
-          
-            <ul>
-              <li><a href="about.html"> About Us</a></li>
-              <li><a href="contact.html"> Contact Us</a></li>
-            </ul>
-          
-        </section>
-    
       <section class="social_media">
         <p class="social_text">Social Media</p>
         <i class="fa-brands fa-facebook-square"></i>
@@ -192,8 +266,7 @@
         <i class="fa-brands fa-linkedin"></i>
         <i class="fa-brands fa-twitter"></i>
       </section>
-    
-      </footer>
-   
-
+    </footer>
+    <script src="js/shopping-cart.js"></script>
   </body>
+</html>
