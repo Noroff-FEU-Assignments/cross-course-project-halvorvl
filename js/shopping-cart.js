@@ -2,6 +2,7 @@ let productsInCart = JSON.parse(localStorage.getItem(`ShoppingCart`));
 if (!productsInCart) {
   productsInCart = [];
 }
+const hideButtonWhenCartIsEmpty = document.querySelector(".hidden");
 const parentElement = document.querySelector(".shoppingCartHtml");
 const sumPriceCartSymbol = document.querySelector(".total-price");
 const products = document.querySelectorAll(".products");
@@ -14,8 +15,8 @@ const shoppingCartHtml = function () {
       return `<section class="cart-info">
 					<img src="${product.image}" class="cart_image">
 					<div>
-						<h5>${product.name}</h5>
-						<h6>$${product.price}</h6>
+						<h2>${product.name}</h2>
+						<h3>$${product.price}</h3>
 						<div>
 							<button class="button-minus" data-id=${product.id}>-</button>
 							<span class="countOfProduct">${product.count}</span>
@@ -30,7 +31,9 @@ const shoppingCartHtml = function () {
     parentElement.innerHTML = result.join(``);
     sumPriceCartSymbol.innerHTML = `Total $ ` + totalPrice();
   } else {
-    parentElement.innerHTML = "Your cart is empty";
+    sumPriceCartSymbol.innerHTML = ` is empty `;
+    // parentElement.innerHTML = "Your cart is empty";
+    hideButtonWhenCartIsEmpty.innerHTML = "";
   }
 };
 

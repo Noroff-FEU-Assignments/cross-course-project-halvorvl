@@ -60,81 +60,15 @@
 
     <header class="jackets_header"></header>
 
-    <main class="checkout">
-      <section class="payment_info">
-        <h1>Payment Methods</h1>
-        <section class="cards_container">
-          <img
-            class="cards"
-            src="../‘images’/mastercard.jpg"
-            alt="Pay with Mastercard"
-          />
-          <img class="cards" src="../‘images’/visa.jpg" alt="Pay with Visa" />
-          <img
-            class="cards"
-            src="../‘images’/paypal.jpg"
-            alt="Pay with PayPal"
-          />
-        </section>
-        <section class="payment_form">
-          <form action="confirmation.html">
-            <p>Shipping Details</p>
-            <label for="name" id="name">Full name</label>
-            <input
-              type="text"
-              id="name"
-              placeholder="Full name"
-              class="form__input"
-            />
-            <label for="country" id="country">Country</label>
-            <input
-              type="text"
-              id="country"
-              placeholder="Country"
-              class="form__input"
-            />
-            <label for="street_adress" id="street_adress">Street Adress</label>
-            <input
-              type="text"
-              id="street_adresse"
-              placeholder="Street adresse"
-              class="form__input"
-            />
-            <label for="postcode" id="postcode"> Postecode/ZIP</label>
-            <input
-              type="number"
-              id="postcode"
-              placeholder="Postcode/ZIP"
-              class="form__input"
-            />
-            <label for="email" id="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              placeholder="E-mail"
-              class="form__input"
-            />
-            <label for="card_number" id="card_number">
-              Payment method <img src="../‘images’/visa_small.jpg" alt="visa"
-            /></label>
-            <input
-              type="number"
-              id="card_number"
-              placeholder="card number"
-              class="form__input"
-            />
-            <label for="ex_date" id="ex_date">Experation date</label>
-            <input
-              type="date"
-              id="ex_date"
-              placeholder="Experation date"
-              class="form__input"
-            />
-
-            <input type="submit" value="Place Order" />
-          </form>
-        </section>
-      </section>
+    <main class="cart_container">
+      <h1 class="cartHeading">
+        Your cart
+        <div class="total-price"></div>
+      </h1>
+      <section class="cart_info shoppingCartHtml"></section>
+      <div class="hidden">
+        <button class="proceedToCheckOut">Pprceed to checkout</button>
+      </div>
     </main>
 
     <footer class="footer">

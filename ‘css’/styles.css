@@ -109,12 +109,6 @@ li {
   font-size: 1.5em;
 }
 
-.total-price {
-  position: absolute;
-  top: 8px;
-  right: 80px;
-}
-
 .search {
   position: absolute;
   top: 110px;
@@ -201,10 +195,6 @@ footer a {
 }
 
 /*hompage styles*/
-
-.hideIndexHtml {
-  display: none;
-}
 
 .best_selling_jackets :nth-child(1) {
   grid-area: best_selling_jackets;
@@ -855,25 +845,7 @@ input[type="submit"] {
 
 /*checkout styles*/
 
-.payment_info {
-  grid-area: payment_info;
-}
-.cart_info {
-  grid-area: cart_info;
-}
-.cards :nth-child(1) {
-  grid-area: cards;
-}
-.cards :nth-child(2) {
-  grid-area: cards;
-}
-.cards :nth-child(3) {
-  grid-area: cards;
-}
-
 .checkout {
-  display: grid;
-  grid-template-areas: "payment_info payment_info cart_info";
   gap: 20px;
 }
 
@@ -895,14 +867,6 @@ input[type="submit"] {
   border-radius: 8%;
   border: solid 1px;
   max-width: 90%;
-}
-
-.cart_info {
-  display: grid;
-  background-color: #ffffff;
-  border: solid 2px;
-  max-width: 100%;
-  justify-content: center;
 }
 
 .cart_image {
@@ -938,5 +902,45 @@ input[type="submit"] {
     grid-template-areas:
       "cart_info"
       "payment_info";
+  }
+}
+
+/*cart styles*/
+
+.total-price {
+  display: inline;
+}
+
+.shoppingCartHtml {
+  display: flex;
+  margin: 20px;
+  text-align: center;
+}
+
+.cart-info {
+  display: flex;
+  flex-direction: column;
+  border: solid black 2px;
+  margin: 3px;
+  padding-bottom: 10px;
+}
+
+.button-plus,
+.button-minus {
+  font-size: 0.5em;
+  padding: 10px;
+  position: relative;
+}
+
+.proceedToCheckOut {
+  font-size: 1.5em;
+  padding: 15px;
+  background-color: #2d7f28;
+  margin-left: 20px;
+}
+
+@media only screen and (min-width: 100px) and (max-width: 599px) {
+  .shoppingCartHtml {
+    flex-direction: column;
   }
 }

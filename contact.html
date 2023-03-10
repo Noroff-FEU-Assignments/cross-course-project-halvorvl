@@ -78,24 +78,29 @@
       </section>
 
       <section class="contact_form">
-        <form action="contact_confirmation.html">
-          <label for="name" id="name">Name</label>
+        <form id="contactform">
+          <label for="name">Name</label>
           <input type="text" id="name" placeholder="Name" class="form__input" />
-          <label for="email" id="email">E-mail</label>
+          <div class="error-message" id="fullNameError">
+            Full name is required
+          </div>
+          <label for="email">E-mail</label>
           <input
             type="email"
             id="email"
             placeholder="E-mail"
             class="form__input"
           />
-          <label for="tel" id="phone">Phone number</label>
+          <div class="error-message" id="email">Email is required</div>
+          <label for="tel">Phone number</label>
           <input
             type="tel"
             id="phone"
             placeholder="Phone number"
             class="form__input"
           />
-          <label for="meessage" id="message">Message</label>
+          <div class="error-message" id="phone">Phone number is required</div>
+          <label for="meessage">Message</label>
           <textarea
             name="message"
             id="message"
@@ -126,5 +131,6 @@
         <i class="fa-brands fa-twitter"></i>
       </section>
     </footer>
+    <script src="js/contact.js"></script>
   </body>
 </html>
