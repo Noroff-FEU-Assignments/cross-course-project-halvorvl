@@ -6,7 +6,8 @@ const hideButtonWhenCartIsEmpty = document.querySelector(".hidden");
 const parentElement = document.querySelector(".shoppingCartHtml");
 const sumPriceCartSymbol = document.querySelector(".total-price");
 const products = document.querySelectorAll(".products");
-//const productsArr = Array.from(products);
+
+console.log(products);
 
 const shoppingCartHtml = function () {
   localStorage.setItem(`ShoppingCart`, JSON.stringify(productsInCart));
@@ -32,7 +33,7 @@ const shoppingCartHtml = function () {
     sumPriceCartSymbol.innerHTML = `Total $ ` + totalPrice();
   } else {
     sumPriceCartSymbol.innerHTML = ` is empty `;
-    // parentElement.innerHTML = "Your cart is empty";
+
     hideButtonWhenCartIsEmpty.innerHTML = "";
   }
 };

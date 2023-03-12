@@ -78,7 +78,7 @@
       </section>
 
       <section class="contact_form">
-        <form id="contactform">
+        <form action="confirmation.html" id="contactform" onsubmit="">
           <label for="name">Name</label>
           <input type="text" id="name" placeholder="Name" class="form__input" />
           <div class="error-message" id="fullNameError">
@@ -91,15 +91,17 @@
             placeholder="E-mail"
             class="form__input"
           />
-          <div class="error-message" id="email">Email is required</div>
-          <label for="tel">Phone number</label>
+          <div class="error-message" id="emailError">Email is required</div>
+          <label for="tel">Phone number (+00 45630500)</label>
           <input
             type="tel"
             id="phone"
             placeholder="Phone number"
             class="form__input"
           />
-          <div class="error-message" id="phone">Phone number is required</div>
+          <div class="error-message" id="phoneError">
+            Phone number is required
+          </div>
           <label for="meessage">Message</label>
           <textarea
             name="message"
@@ -131,6 +133,7 @@
         <i class="fa-brands fa-twitter"></i>
       </section>
     </footer>
+
     <script src="js/contact.js"></script>
   </body>
 </html>

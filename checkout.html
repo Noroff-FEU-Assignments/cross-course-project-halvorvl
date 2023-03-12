@@ -77,44 +77,58 @@
           />
         </section>
         <section class="payment_form">
-          <form action="confirmation.html">
+          <form id="checkOutForm">
             <p>Shipping Details</p>
-            <label for="name" id="name">Full name</label>
+            <label for="name">Full name</label>
             <input
               type="text"
               id="name"
               placeholder="Full name"
               class="form__input"
             />
-            <label for="country" id="country">Country</label>
+
+            <div class="error-message" id="fullNameError">
+              Full name is required
+            </div>
+            <label for="country">Country</label>
             <input
               type="text"
               id="country"
               placeholder="Country"
               class="form__input"
             />
-            <label for="street_adress" id="street_adress">Street Adress</label>
+            <div class="error-message" id="countryError">
+              Country is required
+            </div>
+            <label for="street_adress">Street Adress</label>
             <input
               type="text"
               id="street_adresse"
               placeholder="Street adresse"
               class="form__input"
             />
-            <label for="postcode" id="postcode"> Postecode/ZIP</label>
+            <div class="error-message" id="streetError">
+              Streed adress is required
+            </div>
+            <label for="postcode"> Postecode/ZIP</label>
             <input
               type="number"
               id="postcode"
               placeholder="Postcode/ZIP"
               class="form__input"
             />
-            <label for="email" id="email">E-mail</label>
+            <div class="error-message" id="postCodeError">
+              Postal code is required
+            </div>
+            <label for="email">E-mail</label>
             <input
               type="email"
               id="email"
               placeholder="E-mail"
               class="form__input"
             />
-            <label for="card_number" id="card_number">
+            <div class="error-message" id="emailError">Email is required</div>
+            <label for="card_number">
               Payment method <img src="../‘images’/visa_small.jpg" alt="visa"
             /></label>
             <input
@@ -123,7 +137,7 @@
               placeholder="card number"
               class="form__input"
             />
-            <label for="ex_date" id="ex_date">Experation date</label>
+            <label for="ex_date">Experation date</label>
             <input
               type="date"
               id="ex_date"
@@ -153,6 +167,6 @@
         <i class="fa-brands fa-twitter"></i>
       </section>
     </footer>
-    <script src="js/shopping-cart.js"></script>
+    <script src="js/checkout.js"></script>
   </body>
 </html>

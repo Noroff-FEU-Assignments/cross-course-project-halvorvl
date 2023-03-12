@@ -913,6 +913,8 @@ input[type="submit"] {
 
 .shoppingCartHtml {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 20px;
   text-align: center;
 }
@@ -937,6 +939,16 @@ input[type="submit"] {
   padding: 15px;
   background-color: #2d7f28;
   margin-left: 20px;
+}
+
+.hidden {
+  display: flex;
+  justify-content: center;
+}
+
+.error-message {
+  display: none;
+  color: red;
 }
 
 @media only screen and (min-width: 100px) and (max-width: 599px) {
