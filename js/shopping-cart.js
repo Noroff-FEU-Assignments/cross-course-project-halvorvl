@@ -6,6 +6,7 @@ const hideButtonWhenCartIsEmpty = document.querySelector(".hidden");
 const parentElement = document.querySelector(".shoppingCartHtml");
 const sumPriceCartSymbol = document.querySelector(".total-price");
 const products = document.querySelectorAll(".products");
+const addedToCart = document.querySelector(".addedToCart");
 
 console.log(products);
 
@@ -45,7 +46,6 @@ function updateProductsInCart(product) {
         productsInCart[i].count += 1;
         productsInCart[i].price =
           productsInCart[i].basePrice * productsInCart[i].count;
-        // console.log(productsInCart);
 
         return;
       }
@@ -74,6 +74,16 @@ products.forEach((product) => {
         count: 1,
         id: productId,
       };
+
+      addedToCart.style.display = "block";
+
+      addedToCart.addEventListener("click", (e) => {
+        if (e.target.classList.contains("continureShopping")) {
+          addedToCart.style.display = "none";
+        } else if (e.target.classList.contains("goToCart")) {
+          open("cart.html", "_self");
+        }
+      });
 
       updateProductsInCart(productsToCart);
 

@@ -956,3 +956,35 @@ input[type="submit"] {
     flex-direction: column;
   }
 }
+
+.addedToCart {
+  display: none;
+}
+
+.addedToCartInfo {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  border: solid black;
+  min-height: 20%;
+  min-width: 33%;
+  background-color: #f5f5f7;
+  z-index: 9;
+}
+
+.continureShopping {
+  margin: 10px;
+  font-size: 1em;
+}
+
+.goToCart {
+  margin: 10px;
+  font-size: 1em;
+}
+
+.headinAddedToCart {
+  margin: 10px;
+}
