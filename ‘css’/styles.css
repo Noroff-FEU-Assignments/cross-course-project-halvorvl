@@ -48,6 +48,11 @@ h2 {
   color: #2d7f28;
 }
 
+.product-name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 p {
   padding: 3px;
   margin: 5px;
@@ -143,6 +148,7 @@ li {
 }
 
 .best_selling_jackets {
+  text-align: center;
   max-width: 100%;
   margin: 5%;
   border: solid 2px;
@@ -153,10 +159,7 @@ li {
 }
 
 .best_selling_cart {
-  position: relative;
-  left: 70%;
-  bottom: 35px;
-  font-size: 1.8em;
+  font-size: 2.3em;
   padding: 5px;
 }
 
@@ -598,6 +601,7 @@ header {
 }
 
 .jackets {
+  text-align: center;
   margin: 5%;
   border: solid 2px;
 }
