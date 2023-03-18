@@ -31,7 +31,7 @@ footer {
 body {
   display: grid;
   grid-gap: 5px;
-  background-color: #f5f5f7;
+  background-color: #ffffff;
   font-family: Tahoma, Verdana, Geneva, sans-serif;
   overflow-x: hidden;
   grid-template-areas:
@@ -77,6 +77,10 @@ button a {
   color: #f4f6fa;
 }
 
+.product_information {
+  padding: 5px;
+  margin: 15px;
+}
 .logo {
   max-width: 90%;
 }
@@ -148,7 +152,9 @@ li {
 }
 
 .best_selling_jackets {
+  display: flex;
   text-align: center;
+  flex-direction: column;
   max-width: 100%;
   margin: 5%;
   border: solid 2px;
@@ -601,7 +607,10 @@ header {
 }
 
 .jackets {
+  display: flex;
   text-align: center;
+  flex-direction: column;
+  max-width: 100%;
   margin: 5%;
   border: solid 2px;
 }
@@ -933,7 +942,7 @@ input[type="submit"] {
 
 .button-plus,
 .button-minus {
-  font-size: 0.5em;
+  font-size: 0.9em;
   padding: 10px;
   position: relative;
 }

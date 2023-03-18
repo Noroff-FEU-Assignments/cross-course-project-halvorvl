@@ -8,8 +8,6 @@ const sumPriceCartSymbol = document.querySelector(".total-price");
 const products = document.querySelectorAll(".products");
 const addedToCart = document.querySelector(".addedToCart");
 
-console.log(products);
-
 const shoppingCartHtml = function () {
   localStorage.setItem(`ShoppingCart`, JSON.stringify(productsInCart));
   if (productsInCart.length > 0) {
@@ -64,8 +62,6 @@ products.forEach((product) => {
       const productPriceToNumber = Number(productPrice);
       const productImage = product.querySelector("img").src;
 
-      console.log(product);
-
       let productsToCart = {
         name: productName,
         price: productPriceToNumber,
@@ -88,8 +84,6 @@ products.forEach((product) => {
       updateProductsInCart(productsToCart);
 
       shoppingCartHtml();
-
-      console.log(productsToCart);
     }
   });
 });
@@ -124,8 +118,6 @@ parentElement.addEventListener("click", (e) => {
     shoppingCartHtml();
   }
 });
-
-console.log(productsInCart);
 
 shoppingCartHtml();
 totalPrice();
