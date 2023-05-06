@@ -12,6 +12,36 @@
 
 /*universal styles*/
 
+.error-message {
+  display: none;
+  color: red;
+}
+
+.error {
+  font-size: 2em;
+  color: red;
+}
+
+.loader {
+  border: 20px solid #f3f3f3;
+  border-top: 20px solid;
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  animation: spin 2s linear infinite;
+  margin-left: 35%;
+  transform: translateX(-50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 nav {
   grid-area: nav;
 }
@@ -293,6 +323,10 @@ header {
 /*tablet styles*/
 
 @media only screen and (min-width: 600px) and (max-width: 899px) {
+  .container_jackets {
+    grid-template-areas: "best_selling_jackets best_selling_jackets best_selling_jackets ";
+  }
+
   .search {
     display: none;
   }
@@ -382,6 +416,9 @@ header {
 
 /*mobile homepage styles*/
 @media only screen and (min-width: 100px) and (max-width: 599px) {
+  .container_jackets {
+    grid-template-areas: "best_selling_jackets best_selling_jackets  ";
+  }
   .main_image_text {
     max-width: 35%;
     max-height: 90%;
@@ -597,7 +634,8 @@ header {
   background-image: url(../‘images’/jackets_header.jpg);
 }
 
-.jackets_container {
+.jackets_container,
+.jackets_container_men {
   display: grid;
   justify-content: space-around;
   grid-template-areas:
