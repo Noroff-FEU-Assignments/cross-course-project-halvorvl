@@ -1,7 +1,5 @@
 # Cross Course Project
 
-![image] (../‘images’/rainydays.jpg)
-
 This was a cross course project done during the first year of studying FrontEnd Development at NOROFF
 
 ## Description
@@ -48,7 +46,7 @@ This is where you can leave your social links for people to contact you, such as
 
 [My Facebook page](https://www.facebook.com/halvor.lindrupsen)
 
-[My Web page](www.linkedin.com)
+[My Web page](https://beamish-haupia-57a779.netlify.app/)
 
 ## Acknowledgments
 
