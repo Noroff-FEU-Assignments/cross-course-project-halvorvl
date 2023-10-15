@@ -1,6 +1,8 @@
-# Semester Project
+# Cross Course Project
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image] <img
+            src="../‘images’/rainydays.jpg"
+          />
 
 This was a cross course project done during the first year of studying FrontEnd Development at NOROFF
 
