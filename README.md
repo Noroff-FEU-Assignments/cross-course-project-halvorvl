@@ -1,8 +1,6 @@
 # Cross Course Project
 
-![image] <img
-            src="../‘images’/rainydays.jpg"
-          />
+![image] (../‘images’/rainydays.jpg)
 
 This was a cross course project done during the first year of studying FrontEnd Development at NOROFF
 
